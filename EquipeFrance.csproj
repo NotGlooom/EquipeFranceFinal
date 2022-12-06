@@ -63,17 +63,35 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormAjouterMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAjouterMatch.Designer.cs">
+      <DependentUpon>FormAjouterMatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormModifierJoueur.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormModifierJoueur.Designer.cs">
       <DependentUpon>FormModifierJoueur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormModifierMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormModifierMatch.Designer.cs">
+      <DependentUpon>FormModifierMatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormSuprimmerJoueur.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormSuprimmerJoueur.Designer.cs">
       <DependentUpon>FormSuprimmerJoueur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSuprimmerMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSuprimmerMatch.Designer.cs">
+      <DependentUpon>FormSuprimmerMatch.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,11 +101,20 @@
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAjouterMatch.resx">
+      <DependentUpon>FormAjouterMatch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormModifierJoueur.resx">
       <DependentUpon>FormModifierJoueur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormModifierMatch.resx">
+      <DependentUpon>FormModifierMatch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSuprimmerJoueur.resx">
       <DependentUpon>FormSuprimmerJoueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSuprimmerMatch.resx">
+      <DependentUpon>FormSuprimmerMatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

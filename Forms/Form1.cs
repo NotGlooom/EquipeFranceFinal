@@ -48,5 +48,39 @@ namespace EquipeFrance
             sj.MdiParent = this;
             sj.Show();
         }
+
+        private void fermerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ajouterUnMatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Form enfant
+            FormAjouterMatch am = new FormAjouterMatch();
+            am.MdiParent = this;
+            am.Show();
+        }
+
+        private void modifierUnMatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Form enfant
+            FormModifierMatch mm = new FormModifierMatch();
+            mm.MdiParent = this;
+            mm.Show();
+        }
+
+        private void suprimmerUnMatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Form enfant
+            FormSuprimmerMatch sm = new FormSuprimmerMatch();
+            sm.MdiParent = this;
+            sm.Show();
+        }
+
+        private void fermerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

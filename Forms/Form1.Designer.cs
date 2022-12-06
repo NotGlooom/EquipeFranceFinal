@@ -106,6 +106,7 @@
             this.fermerToolStripMenuItem.Name = "fermerToolStripMenuItem";
             this.fermerToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.fermerToolStripMenuItem.Text = "Fermer";
+            this.fermerToolStripMenuItem.Click += new System.EventHandler(this.fermerToolStripMenuItem_Click);
             // 
             // matchsToolStripMenuItem
             // 
@@ -124,18 +125,21 @@
             this.ajouterUnMatchToolStripMenuItem.Name = "ajouterUnMatchToolStripMenuItem";
             this.ajouterUnMatchToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.ajouterUnMatchToolStripMenuItem.Text = "Ajouter un match";
+            this.ajouterUnMatchToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnMatchToolStripMenuItem_Click);
             // 
             // modifierUnMatchToolStripMenuItem
             // 
             this.modifierUnMatchToolStripMenuItem.Name = "modifierUnMatchToolStripMenuItem";
             this.modifierUnMatchToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.modifierUnMatchToolStripMenuItem.Text = "Modifier un match";
+            this.modifierUnMatchToolStripMenuItem.Click += new System.EventHandler(this.modifierUnMatchToolStripMenuItem_Click);
             // 
             // suprimmerUnMatchToolStripMenuItem
             // 
             this.suprimmerUnMatchToolStripMenuItem.Name = "suprimmerUnMatchToolStripMenuItem";
             this.suprimmerUnMatchToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.suprimmerUnMatchToolStripMenuItem.Text = "Suprimmer un match";
+            this.suprimmerUnMatchToolStripMenuItem.Click += new System.EventHandler(this.suprimmerUnMatchToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -147,6 +151,7 @@
             this.fermerToolStripMenuItem1.Name = "fermerToolStripMenuItem1";
             this.fermerToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
             this.fermerToolStripMenuItem1.Text = "Fermer";
+            this.fermerToolStripMenuItem1.Click += new System.EventHandler(this.fermerToolStripMenuItem1_Click);
             // 
             // statistiqueToolStripMenuItem
             // 
