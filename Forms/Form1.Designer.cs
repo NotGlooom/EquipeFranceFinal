@@ -80,18 +80,21 @@
             this.ajouterUnJoueurToolStripMenuItem.Name = "ajouterUnJoueurToolStripMenuItem";
             this.ajouterUnJoueurToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.ajouterUnJoueurToolStripMenuItem.Text = "Ajouter un joueur";
+            this.ajouterUnJoueurToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnJoueurToolStripMenuItem_Click);
             // 
             // modifierUnJoueurToolStripMenuItem
             // 
             this.modifierUnJoueurToolStripMenuItem.Name = "modifierUnJoueurToolStripMenuItem";
             this.modifierUnJoueurToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.modifierUnJoueurToolStripMenuItem.Text = "Modifier un joueur";
+            this.modifierUnJoueurToolStripMenuItem.Click += new System.EventHandler(this.modifierUnJoueurToolStripMenuItem_Click);
             // 
             // supprimerUnJoueurToolStripMenuItem
             // 
             this.supprimerUnJoueurToolStripMenuItem.Name = "supprimerUnJoueurToolStripMenuItem";
             this.supprimerUnJoueurToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.supprimerUnJoueurToolStripMenuItem.Text = "Supprimer un joueur";
+            this.supprimerUnJoueurToolStripMenuItem.Click += new System.EventHandler(this.supprimerUnJoueurToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -164,20 +167,20 @@
             // listeDToolStripMenuItem
             // 
             this.listeDToolStripMenuItem.Name = "listeDToolStripMenuItem";
-            this.listeDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listeDToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.listeDToolStripMenuItem.Text = "Liste des joueurs";
             this.listeDToolStripMenuItem.Click += new System.EventHandler(this.listeDToolStripMenuItem_Click);
             // 
             // horaireToolStripMenuItem
             // 
             this.horaireToolStripMenuItem.Name = "horaireToolStripMenuItem";
-            this.horaireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.horaireToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.horaireToolStripMenuItem.Text = "Horaire";
             // 
             // statistiqueToolStripMenuItem1
             // 
             this.statistiqueToolStripMenuItem1.Name = "statistiqueToolStripMenuItem1";
-            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.statistiqueToolStripMenuItem1.Text = "Statistique";
             // 
             // FormParent

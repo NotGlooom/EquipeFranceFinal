@@ -46,21 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormAjouterJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAjouterJoueur.Designer.cs">
+      <DependentUpon>FormAjouterJoueur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Joueur.cs" />
     <Compile Include="Classes\Match.cs" />
     <Compile Include="Classes\Statistiques.cs" />
     <Compile Include="Classes\Stat_Gardien.cs" />
     <Compile Include="Classes\Stat_Joueur.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormModifierJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormModifierJoueur.Designer.cs">
+      <DependentUpon>FormModifierJoueur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSuprimmerJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSuprimmerJoueur.Designer.cs">
+      <DependentUpon>FormSuprimmerJoueur.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\FormAjouterJoueur.resx">
+      <DependentUpon>FormAjouterJoueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormModifierJoueur.resx">
+      <DependentUpon>FormModifierJoueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSuprimmerJoueur.resx">
+      <DependentUpon>FormSuprimmerJoueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

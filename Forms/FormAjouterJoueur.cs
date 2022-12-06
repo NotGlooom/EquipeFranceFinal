@@ -7,17 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EquipeFrance.Classes;
 
-namespace EquipeFrance
+namespace EquipeFrance.Classes
 {
-    public partial class FormParent : Form
+    public partial class FormAjouterJoueur : Form
     {
-        public FormParent()
+        public FormAjouterJoueur()
         {
             InitializeComponent();
         }
 
-        private void listeDToolStripMenuItem_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
