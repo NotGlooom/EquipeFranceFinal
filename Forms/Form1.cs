@@ -22,6 +22,10 @@ namespace EquipeFrance
 
         private void listeDToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Form enfant
+            FormListeJoueurs lj = new FormListeJoueurs();
+            lj.MdiParent = this;
+            lj.Show();
 
         }
 
@@ -81,6 +85,14 @@ namespace EquipeFrance
         private void fermerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void horaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Form enfant
+            FormHoraire h = new FormHoraire();
+            h.MdiParent = this;
+            h.Show();
         }
     }
 }

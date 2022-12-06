@@ -179,8 +179,9 @@
             // horaireToolStripMenuItem
             // 
             this.horaireToolStripMenuItem.Name = "horaireToolStripMenuItem";
-            this.horaireToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.horaireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.horaireToolStripMenuItem.Text = "Horaire";
+            this.horaireToolStripMenuItem.Click += new System.EventHandler(this.horaireToolStripMenuItem_Click);
             // 
             // statistiqueToolStripMenuItem1
             // 
