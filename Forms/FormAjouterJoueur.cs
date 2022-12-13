@@ -138,10 +138,23 @@ namespace EquipeFrance.Classes
 
 
 
-
+        /// <summary>
+        /// Évenement clicked pour le bouton ajouter joueur. Ajoute le joueur à la base de données s'il n,existe pas déjà.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+            if(VerifierTous()) //Si tous les champs sont valides
+            {
+                //Instancier un joueur avec les champs entrés par l'utilisateur
+                Joueur joue = new Joueur(int.Parse(txtNum.Text), txtNom.Text, txtPrenom.Text,
+                    double.Parse(txtTaille.Text), double.Parse(txtMasse.Text), cbPosition.Text);
 
+                //Ajouter le joueur à la base de données
+                Equipe.AjouterJoueur(joue);
+                InitialiserControles();
+            }
         }
     }
 }
