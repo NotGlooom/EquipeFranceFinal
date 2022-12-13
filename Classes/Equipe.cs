@@ -23,7 +23,7 @@ namespace EquipeFrance.Classes
                 conn.Open();
 
                 //Vérifier si le joueur exiist déja avec le numéro du joueur
-                string sql = $"SELECT Numero FROM Joueurs WHERE PrimaryKeyColumn = {joue.Num_joueur}";
+                string sql = $"SELECT Numero FROM Joueurs WHERE Numero = {joue.Num_joueur}";
                 
                 SqlCommand cmd = new SqlCommand(sql, conn);
 

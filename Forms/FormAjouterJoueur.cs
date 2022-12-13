@@ -58,10 +58,19 @@ namespace EquipeFrance.Classes
         /// <returns></returns>
         public bool VerifierTaille(TextBox tb, Label lb)
         {
-            //Convertir le txtbox en int
-            double taille = double.Parse(tb.Text);
-            if (taille >= 150.00 && taille <= 220.00) { lb.Text = ""; return true; }
-            else //Sinon afficher un message d'erreur
+            if(tb.Text != "")
+            {
+                //Convertir le txtbox en int
+                double taille = double.Parse(tb.Text);
+                if (taille >= 150.00 && taille <= 220.00) { lb.Text = ""; return true; }
+                else //Sinon afficher un message d'erreur
+                {
+                    lb.ForeColor = Color.Red; lb.Text = "Taille doit être entre 150cm et 220cm";
+                    tb.Clear();
+                    return false;
+                }
+            }
+            else
             {
                 lb.ForeColor = Color.Red; lb.Text = "Taille doit être entre 150cm et 220cm";
                 tb.Clear();
@@ -71,19 +80,28 @@ namespace EquipeFrance.Classes
 
 
         /// <summary>
-        /// Vérifier que la valeur entrée est entre 130lbs(59 kg) et 220lbs(100kg)
+        /// Vérifier que la valeur entrée est entre 130lbs(59 kg) et 250lbs(113kg)
         /// </summary>
         /// <param name="tb"></param>
         /// <param name="lb"></param>
         /// <returns></returns>
         public bool VerifierMasse(TextBox tb, Label lb)
         {
-            //Convertir le txtbox en int
-            double masse = double.Parse(tb.Text);
-            if (masse >= 130.00 && masse <= 220.00) { lb.Text = ""; return true;}
-            else //Sinon afficher un message d'erreur
+            if (tb.Text != "")
             {
-                lb.ForeColor = Color.Red; lb.Text = "Masse doit être entre 130lbs et 220lbs";
+                //Convertir le txtbox en int
+                double masse = double.Parse(tb.Text);
+                if (masse > 130.00 && masse < 250.00) { lb.Text = ""; return true; }
+                else //Sinon afficher un message d'erreur
+                {
+                    lb.ForeColor = Color.Red; lb.Text = "Masse doit être entre 130lbs et 250lbs";
+                    tb.Clear();
+                    return false;
+                }
+            }
+            else
+            {
+                lb.ForeColor = Color.Red; lb.Text = "Masse doit être entre 130lbs et 250lbs";
                 tb.Clear();
                 return false;
             }
