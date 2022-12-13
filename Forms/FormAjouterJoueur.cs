@@ -59,8 +59,8 @@ namespace EquipeFrance.Classes
         public bool VerifierTaille(TextBox tb, Label lb)
         {
             //Convertir le txtbox en int
-            int taille = int.Parse(tb.Text);
-            if (taille >= 150 && taille <= 220) { lb.Text = ""; return true; }
+            double taille = double.Parse(tb.Text);
+            if (taille >= 150.00 && taille <= 220.00) { lb.Text = ""; return true; }
             else //Sinon afficher un message d'erreur
             {
                 lb.ForeColor = Color.Red; lb.Text = "Taille doit être entre 150cm et 220cm";
@@ -79,8 +79,8 @@ namespace EquipeFrance.Classes
         public bool VerifierMasse(TextBox tb, Label lb)
         {
             //Convertir le txtbox en int
-            int masse = int.Parse(tb.Text);
-            if (masse >= 130 && masse <= 220) { lb.Text = ""; return true;}
+            double masse = double.Parse(tb.Text);
+            if (masse >= 130.00 && masse <= 220.00) { lb.Text = ""; return true;}
             else //Sinon afficher un message d'erreur
             {
                 lb.ForeColor = Color.Red; lb.Text = "Masse doit être entre 130lbs et 220lbs";
