@@ -19,7 +19,9 @@ namespace EquipeFrance.Forms
         }
 
 
-
+        /// <summary>
+        /// Méthode qui compte le nombre de joueurs dans la table Joueurs
+        /// </summary>
         public void CompterJoueur()
         {
             textBox1.Text = "";
