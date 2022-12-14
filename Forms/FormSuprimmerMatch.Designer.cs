@@ -32,6 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSupprimer
@@ -43,6 +44,7 @@
             this.btnSupprimer.TabIndex = 27;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // label2
             // 
@@ -69,11 +71,20 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Numéro du match:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(217, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 28;
+            // 
             // FormSuprimmerMatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 218);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNum1);
@@ -91,5 +102,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }
