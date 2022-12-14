@@ -37,6 +37,7 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnAfficher = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -104,11 +105,23 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Nombres de joueurs:";
             // 
+            // btnAfficher
+            // 
+            this.btnAfficher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfficher.Location = new System.Drawing.Point(496, 366);
+            this.btnAfficher.Name = "btnAfficher";
+            this.btnAfficher.Size = new System.Drawing.Size(134, 35);
+            this.btnAfficher.TabIndex = 30;
+            this.btnAfficher.Text = "Afficher";
+            this.btnAfficher.UseVisualStyleBackColor = true;
+            this.btnAfficher.Click += new System.EventHandler(this.btnAfficher_Click);
+            // 
             // FormListeJoueurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 450);
+            this.Controls.Add(this.btnAfficher);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listView1);
@@ -130,5 +143,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnAfficher;
     }
 }
