@@ -117,7 +117,42 @@ namespace EquipeFrance.Classes
         }
 
 
+        public static void SuprimmerJoueur(int num)
+        {
+            //Connection à la base de donnés
+            string connectionString = "Data Source=MSI\\SQLEXPRESS;Initial Catalog=\"Équipe France\";Integrated Security=True";
 
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                //Vérifier si le joueur exist déja avec le numéro du joueur
+                string sql = $"SELECT Numero FROM Joueurs WHERE Numero = {num}";
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+
+                // Exécuter la command et mettre le résultat dans une variable
+                object resultat = cmd.ExecuteScalar();
+
+                // Si le résultat n'est pas null, le joueur exist, le suprimmer
+                if (resultat != null)
+                {
+                    //Suprimme le joueur avec ce numéro
+                    string sql2 = $"DELETE FROM Joueurs WHERE Numero = {num}";
+
+                    SqlCommand cmd1 = new SqlCommand(sql2, conn);
+                    cmd1.ExecuteNonQuery();
+                    conn.Close();
+                }
+
+                else
+                {
+                    MessageBox.Show("Joueur n'existe pas", "Message");
+                    conn.Close();
+                }
+            }
+        }
 
 
     }
