@@ -40,8 +40,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtMasse1 = new System.Windows.Forms.TextBox();
             this.txtTaille1 = new System.Windows.Forms.TextBox();
-            this.cbPosition = new System.Windows.Forms.ComboBox();
+            this.cbPosition1 = new System.Windows.Forms.ComboBox();
             this.btnModifier = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +71,7 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(-19, 82);
+            this.label2.Location = new System.Drawing.Point(-19, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(515, 3);
             this.label2.TabIndex = 4;
@@ -148,18 +154,18 @@
             this.txtTaille1.Size = new System.Drawing.Size(208, 20);
             this.txtTaille1.TabIndex = 26;
             // 
-            // cbPosition
+            // cbPosition1
             // 
-            this.cbPosition.FormattingEnabled = true;
-            this.cbPosition.Items.AddRange(new object[] {
+            this.cbPosition1.FormattingEnabled = true;
+            this.cbPosition1.Items.AddRange(new object[] {
             "Attaquant",
             "Milieu",
             "Défenseur",
             "Gardien"});
-            this.cbPosition.Location = new System.Drawing.Point(218, 346);
-            this.cbPosition.Name = "cbPosition";
-            this.cbPosition.Size = new System.Drawing.Size(208, 21);
-            this.cbPosition.TabIndex = 28;
+            this.cbPosition1.Location = new System.Drawing.Point(218, 346);
+            this.cbPosition1.Name = "cbPosition1";
+            this.cbPosition1.Size = new System.Drawing.Size(208, 21);
+            this.cbPosition1.TabIndex = 28;
             // 
             // btnModifier
             // 
@@ -170,14 +176,69 @@
             this.btnModifier.TabIndex = 29;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(218, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(218, 142);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 13);
+            this.label9.TabIndex = 31;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(215, 196);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.TabIndex = 32;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(218, 253);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 13);
+            this.label11.TabIndex = 33;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(218, 307);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(0, 13);
+            this.label12.TabIndex = 34;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(218, 370);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.TabIndex = 35;
             // 
             // FormModifierJoueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 529);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnModifier);
-            this.Controls.Add(this.cbPosition);
+            this.Controls.Add(this.cbPosition1);
             this.Controls.Add(this.txtMasse1);
             this.Controls.Add(this.txtTaille1);
             this.Controls.Add(this.label8);
@@ -211,7 +272,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtMasse1;
         private System.Windows.Forms.TextBox txtTaille1;
-        private System.Windows.Forms.ComboBox cbPosition;
+        private System.Windows.Forms.ComboBox cbPosition1;
         private System.Windows.Forms.Button btnModifier;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
