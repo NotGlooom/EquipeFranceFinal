@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using EquipeFrance.Classes;
 
 namespace EquipeFrance.Forms
 {
@@ -94,9 +95,9 @@ namespace EquipeFrance.Forms
             b_numero = VerifierRegex("^[0-9]{4}$", txtNum, label4, "Quatre chiffres");
             b_adversaire = VerifierRegex("^[A-Z]{1}[a-z]{1,20}$", txtAdversaire, label5, "Lettre majuscule suivie de 1 à 20 lettres minuscules");
             //Appel de la méthode pour vérifier la date
-            b_jour = VerifierDate(dtpJourMatch, label5);
+            b_jour = VerifierDate(dtpJourMatch, label6);
             //Vérifier le combobox (stade)
-            b_stade = VerifierCombobox(cbStade, label6);
+            b_stade = VerifierCombobox(cbStade, label7);
             //Si toutes les vérifications sont valides retourner vrai
             if (b_numero && b_adversaire && b_jour && b_stade)
                 return true;
@@ -117,10 +118,22 @@ namespace EquipeFrance.Forms
 
 
 
-
+        /// <summary>
+        /// Événement clicked pour le bouton ajouter match. Ajoute le match à la base de données s'il n'existe pas déjà.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+            if(VerifierTous()) // Si tous les champs sont valides
+            {
+                //Instancier un match avec les champs entrés par l'utilisateur
+                Classes.Match mat = new Classes.Match(int.Parse(txtNum.Text), txtAdversaire.Text, dtpJourMatch.Value.Date, cbStade.Text);
 
+                //Ajouter le match à la base de données
+                Horaire.AjouterMatch(mat);
+                InitialiserControles();
+            }
         }
 
         

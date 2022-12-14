@@ -11,6 +11,11 @@ namespace EquipeFrance.Classes
     public static class Equipe
     {
 
+
+        /// <summary>
+        /// Les méthodes statiques Ajouter, Modifier et Suprimmer joueur
+        /// </summary>
+        /// <param name="joue"></param>
         //Méthodes
 
         public static void AjouterJoueur(Joueur joue)

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Equipe.cs" />
+    <Compile Include="Classes\Horaire.cs" />
     <Compile Include="Forms\FormAjouterJoueur.cs">
       <SubType>Form</SubType>
     </Compile>
