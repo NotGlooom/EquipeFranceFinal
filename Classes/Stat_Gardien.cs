@@ -19,7 +19,8 @@ namespace EquipeFrance.Classes
         private int butlaisse;
 
         //Constructeur de la classe Stat_Gardien
-        public Stat_Gardien(int pButA, int pButsL, TimeSpan pTemps) : base(pTemps)
+        public Stat_Gardien(int pButA, int pButsL, int pNumero, TimeSpan pTemps, int pJaune, int pRouge) 
+            : base(pNumero, pTemps, pJaune, pRouge)
         {
             this.butsarrete = pButA;
             this.butlaisse = pButsL;

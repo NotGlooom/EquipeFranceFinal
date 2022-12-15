@@ -20,7 +20,8 @@ namespace EquipeFrance.Classes
 
 
         //Constructeur de la classe Stat_Joueur
-        public Stat_Joueur(int pButs, int pAssists, TimeSpan pTemps) : base(pTemps)
+        public Stat_Joueur(int pButs, int pAssists, int pNumero, TimeSpan pTemps, int pJaune, int pRouge) 
+            : base(pNumero, pTemps, pJaune, pRouge)
         {
             this.buts = pButs;
             this.assists = pAssists;
