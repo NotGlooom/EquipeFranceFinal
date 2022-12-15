@@ -48,7 +48,7 @@ namespace EquipeFrance.Forms
             //Initialiser le label
             label3.Text = "";
             //Vérifier que le numéro entré correspond au modèle
-            bool b_numero = VerifierRegex("^[0-9]{2}$", txtNum1, label3, "2 chiffres");
+            bool b_numero = VerifierRegex("^[0-9]{1,2}$", txtNum1, label3, "1 ou 2 chiffres");
             if (b_numero) //si oui suprimmer joueur
             {
                 Equipe.SuprimmerJoueur(int.Parse(txtNum1.Text));

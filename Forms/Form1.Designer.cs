@@ -46,6 +46,11 @@
             this.listeDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statistiqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.fermerToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statGardienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,6 +160,10 @@
             // 
             // statistiqueToolStripMenuItem
             // 
+            this.statistiqueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modifierToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.fermerToolStripMenuItem2});
             this.statistiqueToolStripMenuItem.Name = "statistiqueToolStripMenuItem";
             this.statistiqueToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.statistiqueToolStripMenuItem.Text = "Statistique";
@@ -172,7 +181,7 @@
             // listeDToolStripMenuItem
             // 
             this.listeDToolStripMenuItem.Name = "listeDToolStripMenuItem";
-            this.listeDToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.listeDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listeDToolStripMenuItem.Text = "Liste des joueurs";
             this.listeDToolStripMenuItem.Click += new System.EventHandler(this.listeDToolStripMenuItem_Click);
             // 
@@ -186,8 +195,43 @@
             // statistiqueToolStripMenuItem1
             // 
             this.statistiqueToolStripMenuItem1.Name = "statistiqueToolStripMenuItem1";
-            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.statistiqueToolStripMenuItem1.Text = "Statistique";
+            // 
+            // modifierToolStripMenuItem
+            // 
+            this.modifierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statJoueurToolStripMenuItem,
+            this.statGardienToolStripMenuItem});
+            this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modifierToolStripMenuItem.Text = "Modifier";
+            this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            // 
+            // fermerToolStripMenuItem2
+            // 
+            this.fermerToolStripMenuItem2.Name = "fermerToolStripMenuItem2";
+            this.fermerToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.fermerToolStripMenuItem2.Text = "Fermer";
+            this.fermerToolStripMenuItem2.Click += new System.EventHandler(this.fermerToolStripMenuItem2_Click);
+            // 
+            // statJoueurToolStripMenuItem
+            // 
+            this.statJoueurToolStripMenuItem.Name = "statJoueurToolStripMenuItem";
+            this.statJoueurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statJoueurToolStripMenuItem.Text = "Stat_Joueur";
+            this.statJoueurToolStripMenuItem.Click += new System.EventHandler(this.statJoueurToolStripMenuItem_Click);
+            // 
+            // statGardienToolStripMenuItem
+            // 
+            this.statGardienToolStripMenuItem.Name = "statGardienToolStripMenuItem";
+            this.statGardienToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statGardienToolStripMenuItem.Text = "Stat_Gardien";
             // 
             // FormParent
             // 
@@ -227,6 +271,11 @@
         private System.Windows.Forms.ToolStripMenuItem listeDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem horaireToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statistiqueToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem fermerToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem statJoueurToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem statGardienToolStripMenuItem;
     }
 }
 

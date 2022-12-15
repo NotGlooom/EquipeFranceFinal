@@ -94,5 +94,23 @@ namespace EquipeFrance
             h.MdiParent = this;
             h.Show();
         }
+
+        private void modifierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fermerToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void statJoueurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Form enfant
+            FormModifierStat_Joueur sj =new FormModifierStat_Joueur();
+            sj.MdiParent = this;
+            sj.Show();
+        }
     }
 }

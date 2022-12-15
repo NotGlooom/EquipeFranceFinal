@@ -95,6 +95,12 @@
     <Compile Include="Forms\FormModifierMatch.Designer.cs">
       <DependentUpon>FormModifierMatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormModifierStat_Joueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormModifierStat_Joueur.Designer.cs">
+      <DependentUpon>FormModifierStat_Joueur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormSuprimmerJoueur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormModifierMatch.resx">
       <DependentUpon>FormModifierMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormModifierStat_Joueur.resx">
+      <DependentUpon>FormModifierStat_Joueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSuprimmerJoueur.resx">
       <DependentUpon>FormSuprimmerJoueur.cs</DependentUpon>
