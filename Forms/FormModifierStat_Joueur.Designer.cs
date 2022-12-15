@@ -218,7 +218,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(69, 16);
             this.label13.TabIndex = 41;
-            this.label13.Text = "hh, mm, ss";
+            this.label13.Text = "hh: mm: ss";
             // 
             // btnModifier
             // 
