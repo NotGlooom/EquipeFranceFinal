@@ -88,18 +88,12 @@ namespace EquipeFrance.Classes
                 // Si le résultat n'est pas null, le joueur exist
                 if (resultat != null)
                 {
-                    //Suprimme le joueur avec ce numéro
-                    string sql2 = $"DELETE FROM Joueurs WHERE Numero = {joue.Num_joueur}";
-
-                    SqlCommand cmd1 = new SqlCommand(sql2, conn);
-                    cmd1.ExecuteNonQuery();
-
-
-                    //Maintenant ajouter le nouveau joueur (modifier) 
-                    //Créer la commande sql pour insérer l'objet joueur dans la table
+                    //Maintenant modifier le nouveau joueur 
+                    //Créer la commande sql pour update l'objet joueur dans la table
                     SqlCommand cmd2 = new SqlCommand();
                     cmd2.Connection = conn;
-                    cmd2.CommandText = "INSERT INTO Joueurs VALUES (@Num_joueur, @Nom, @Prenom, @Taille, @Masse, @Position)";
+                    cmd2.CommandText = "UPDATE Joueurs SET Nom = @Nom, Prenom = @Prenom, Taille = @Taille, Masse = @Masse," +
+                        " Position = @Position WHERE Numero = @Num_joueur";
 
                     cmd2.Parameters.AddWithValue("@Num_joueur", joue.Num_joueur);
                     cmd2.Parameters.AddWithValue("@Nom", joue.Nom);

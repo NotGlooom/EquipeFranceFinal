@@ -42,15 +42,15 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.fermerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statistiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statGardienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.fermerToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.afficherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statistiqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.fermerToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.statJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statGardienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -168,36 +168,6 @@
             this.statistiqueToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.statistiqueToolStripMenuItem.Text = "Statistique";
             // 
-            // afficherToolStripMenuItem
-            // 
-            this.afficherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listeDToolStripMenuItem,
-            this.horaireToolStripMenuItem,
-            this.statistiqueToolStripMenuItem1});
-            this.afficherToolStripMenuItem.Name = "afficherToolStripMenuItem";
-            this.afficherToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.afficherToolStripMenuItem.Text = "Afficher";
-            // 
-            // listeDToolStripMenuItem
-            // 
-            this.listeDToolStripMenuItem.Name = "listeDToolStripMenuItem";
-            this.listeDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listeDToolStripMenuItem.Text = "Liste des joueurs";
-            this.listeDToolStripMenuItem.Click += new System.EventHandler(this.listeDToolStripMenuItem_Click);
-            // 
-            // horaireToolStripMenuItem
-            // 
-            this.horaireToolStripMenuItem.Name = "horaireToolStripMenuItem";
-            this.horaireToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.horaireToolStripMenuItem.Text = "Horaire";
-            this.horaireToolStripMenuItem.Click += new System.EventHandler(this.horaireToolStripMenuItem_Click);
-            // 
-            // statistiqueToolStripMenuItem1
-            // 
-            this.statistiqueToolStripMenuItem1.Name = "statistiqueToolStripMenuItem1";
-            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.statistiqueToolStripMenuItem1.Text = "Statistique";
-            // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -207,18 +177,6 @@
             this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modifierToolStripMenuItem.Text = "Modifier";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
-            // 
-            // fermerToolStripMenuItem2
-            // 
-            this.fermerToolStripMenuItem2.Name = "fermerToolStripMenuItem2";
-            this.fermerToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.fermerToolStripMenuItem2.Text = "Fermer";
-            this.fermerToolStripMenuItem2.Click += new System.EventHandler(this.fermerToolStripMenuItem2_Click);
             // 
             // statJoueurToolStripMenuItem
             // 
@@ -232,6 +190,49 @@
             this.statGardienToolStripMenuItem.Name = "statGardienToolStripMenuItem";
             this.statGardienToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.statGardienToolStripMenuItem.Text = "Stat_Gardien";
+            this.statGardienToolStripMenuItem.Click += new System.EventHandler(this.statGardienToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            // 
+            // fermerToolStripMenuItem2
+            // 
+            this.fermerToolStripMenuItem2.Name = "fermerToolStripMenuItem2";
+            this.fermerToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.fermerToolStripMenuItem2.Text = "Fermer";
+            this.fermerToolStripMenuItem2.Click += new System.EventHandler(this.fermerToolStripMenuItem2_Click);
+            // 
+            // afficherToolStripMenuItem
+            // 
+            this.afficherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listeDToolStripMenuItem,
+            this.horaireToolStripMenuItem,
+            this.statistiqueToolStripMenuItem1});
+            this.afficherToolStripMenuItem.Name = "afficherToolStripMenuItem";
+            this.afficherToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.afficherToolStripMenuItem.Text = "Afficher";
+            // 
+            // listeDToolStripMenuItem
+            // 
+            this.listeDToolStripMenuItem.Name = "listeDToolStripMenuItem";
+            this.listeDToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.listeDToolStripMenuItem.Text = "Liste des joueurs";
+            this.listeDToolStripMenuItem.Click += new System.EventHandler(this.listeDToolStripMenuItem_Click);
+            // 
+            // horaireToolStripMenuItem
+            // 
+            this.horaireToolStripMenuItem.Name = "horaireToolStripMenuItem";
+            this.horaireToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.horaireToolStripMenuItem.Text = "Horaire";
+            this.horaireToolStripMenuItem.Click += new System.EventHandler(this.horaireToolStripMenuItem_Click);
+            // 
+            // statistiqueToolStripMenuItem1
+            // 
+            this.statistiqueToolStripMenuItem1.Name = "statistiqueToolStripMenuItem1";
+            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.statistiqueToolStripMenuItem1.Text = "Statistique";
             // 
             // FormParent
             // 

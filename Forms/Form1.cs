@@ -112,5 +112,13 @@ namespace EquipeFrance
             sj.MdiParent = this;
             sj.Show();
         }
+
+        private void statGardienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Form enfant
+            FormModifierStat_Gardien sg = new FormModifierStat_Gardien();
+            sg.MdiParent = this;
+            sg.Show();
+        }
     }
 }
