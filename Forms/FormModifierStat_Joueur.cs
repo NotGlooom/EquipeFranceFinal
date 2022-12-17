@@ -59,7 +59,7 @@ namespace EquipeFrance.Forms
             b_numero = VerifierRegex("^[0-9]{1,2}$", txtNum, label6, "Un ou deux chiffres");
             b_buts = VerifierRegex("^[0-9]{1,2}$", txtButs, label7, "Un ou deux chiffres");
             b_assists = VerifierRegex("^[0-9]{1,2}$", txtAssists, label8, "Un ou deux chiffres");
-            b_temps = VerifierRegex("^([0-9]{2}):([0-9]{2}):([0-9]{2})$", txtTemps, label9, "Le format de l'heure est hh:mm:ss");
+            b_temps = VerifierRegex("^([0-1][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$", txtTemps, label9, "Le format de l'heure est hh:mm:ss");
             b_jaunes = VerifierRegex("^[0-9]{1,2}$", txtJaunes, label10, "Un ou deux chiffres");
             b_rouges = VerifierRegex("^[0-9]{1,2}$", txtRouges, label11, "Un ou deux chiffres");
             //Si toutes les vérifications  sont valides retourner vrai
