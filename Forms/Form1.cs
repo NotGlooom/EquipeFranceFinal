@@ -120,5 +120,13 @@ namespace EquipeFrance
             sg.MdiParent = this;
             sg.Show();
         }
+
+        private void statistiqueToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //Form enfant
+            FormListStats ls = new FormListStats();
+            ls.MdiParent = this;
+            ls.Show();
+        }
     }
 }

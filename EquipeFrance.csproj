@@ -83,6 +83,12 @@
     <Compile Include="Forms\FormListeJoueurs.Designer.cs">
       <DependentUpon>FormListeJoueurs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormListStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormListStats.Designer.cs">
+      <DependentUpon>FormListStats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormModifierJoueur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormListeJoueurs.resx">
       <DependentUpon>FormListeJoueurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormListStats.resx">
+      <DependentUpon>FormListStats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormModifierJoueur.resx">
       <DependentUpon>FormModifierJoueur.cs</DependentUpon>

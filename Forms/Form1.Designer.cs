@@ -231,8 +231,9 @@
             // statistiqueToolStripMenuItem1
             // 
             this.statistiqueToolStripMenuItem1.Name = "statistiqueToolStripMenuItem1";
-            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.statistiqueToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.statistiqueToolStripMenuItem1.Text = "Statistique";
+            this.statistiqueToolStripMenuItem1.Click += new System.EventHandler(this.statistiqueToolStripMenuItem1_Click);
             // 
             // FormParent
             // 
